@@ -13,8 +13,11 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-
-
+soma = 0;
+tmp = 0;
+hipoteses = X * theta;
+desviopadrao = (hipoteses - y).^2;
+J = 1 / (2*m) * sum(desviopadrao);
 
 
 % =========================================================================
